@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [BookStore Suite]">
   <test thread-count="5" verbose="0" name="BookStore Tests(failed)">
     <classes>
-      <class name="tests.LoginTest">
+      <class name="tests.BookStoreTest">
         <methods>
-          <include name="testValidLogin"/>
           <include name="tearDown"/>
           <include name="setup"/>
+          <include name="verifyBookDetails"/>
         </methods>
-      </class> <!-- tests.LoginTest -->
+      </class> <!-- tests.BookStoreTest -->
     </classes>
   </test> <!-- BookStore Tests(failed) -->
 </suite> <!-- Failed suite [BookStore Suite] -->

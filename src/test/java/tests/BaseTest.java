@@ -13,8 +13,8 @@ public class BaseTest {
     public void setup() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.manage().window().maximize();
         driver.get("https://demoqa.com/books");
+        driver.manage().window().maximize();
     }
 
 

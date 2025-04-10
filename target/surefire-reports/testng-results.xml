@@ -1,49 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="BookStore Suite" duration-ms="72470" started-at="2025-04-10T04:14:00Z" finished-at="2025-04-10T04:15:12Z">
+  <suite name="BookStore Suite" duration-ms="229930" started-at="2025-04-10T12:41:16Z" finished-at="2025-04-10T12:45:06Z">
     <groups>
     </groups>
-    <test name="BookStore Tests" duration-ms="72470" started-at="2025-04-10T04:14:00Z" finished-at="2025-04-10T04:15:12Z">
+    <test name="BookStore Tests" duration-ms="229930" started-at="2025-04-10T12:41:16Z" finished-at="2025-04-10T12:45:06Z">
       <class name="tests.LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LoginTest@60dcc9fe]" name="setup" is-config="true" duration-ms="65934" started-at="2025-04-10T04:14:00Z" finished-at="2025-04-10T04:15:06Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.LoginTest@222114ba]" name="setUp" is-config="true" duration-ms="49416" started-at="2025-04-10T12:41:16Z" finished-at="2025-04-10T12:42:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="successfulLogin()[pri:0, instance:tests.LoginTest@222114ba]" name="successfulLogin" duration-ms="13005" started-at="2025-04-10T12:42:05Z" finished-at="2025-04-10T12:42:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginTest@222114ba]" name="tearDown" is-config="true" duration-ms="124" started-at="2025-04-10T12:42:18Z" finished-at="2025-04-10T12:42:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.LoginTest@222114ba]" name="setUp" is-config="true" duration-ms="40854" started-at="2025-04-10T12:42:18Z" finished-at="2025-04-10T12:42:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="unSuccessfulLogin()[pri:0, instance:tests.LoginTest@222114ba]" name="unSuccessfulLogin" duration-ms="12139" started-at="2025-04-10T12:42:59Z" finished-at="2025-04-10T12:43:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unSuccessfulLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginTest@222114ba]" name="tearDown" is-config="true" duration-ms="104" started-at="2025-04-10T12:43:11Z" finished-at="2025-04-10T12:43:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.BookStoreTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.BookStoreTest@16e7dcfd]" name="setup" is-config="true" duration-ms="41851" started-at="2025-04-10T12:43:11Z" finished-at="2025-04-10T12:43:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="testValidLogin()[pri:0, instance:tests.LoginTest@60dcc9fe]" name="testValidLogin" duration-ms="6345" started-at="2025-04-10T04:15:06Z" finished-at="2025-04-10T04:15:12Z">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method status="FAIL" signature="verifyBookDetails()[pri:0, instance:tests.BookStoreTest@16e7dcfd]" name="verifyBookDetails" duration-ms="19569" started-at="2025-04-10T12:43:53Z" finished-at="2025-04-10T12:44:13Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[element click intercepted: Element <button id="login" type="button" class="btn btn-primary">...</button> is not clickable at point (924, 768). Other element would receive the click: <iframe frameborder="0" src="https://4f7f608db5b00845839ba8d4c74da0b7.safeframe.googlesyndication.com/safeframe/1-0-41/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="728" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="private-state-token-redemption;attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe>
-  (Session info: chrome=135.0.7049.43)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '192-168-1-112.tpgi.com.au', ip: 'fe80:0:0:0:18f9:7a2e:e2ef:2e6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '1.8.0_371'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.43, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: /var/folders/cr/dqnwhrqs1n1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b75833dfc9f06b0a2ca7147b321167b3]]>
+              <![CDATA[Page did not redirect to the expected URL. Current URL: https://demoqa.com/books?book=9781449325862]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="login" type="button" class="btn btn-primary">...</button> is not clickable at point (924, 768). Other element would receive the click: <iframe frameborder="0" src="https://4f7f608db5b00845839ba8d4c74da0b7.safeframe.googlesyndication.com/safeframe/1-0-41/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="728" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="private-state-token-redemption;attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe>
-  (Session info: chrome=135.0.7049.43)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '192-168-1-112.tpgi.com.au', ip: 'fe80:0:0:0:18f9:7a2e:e2ef:2e6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '1.8.0_371'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.43, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: /var/folders/cr/dqnwhrqs1n1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b75833dfc9f06b0a2ca7147b321167b3
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at pages.LoginPage.login(LoginPage.java:20)
-at tests.LoginTest.testValidLogin(LoginTest.java:12)
+              <![CDATA[java.lang.AssertionError: Page did not redirect to the expected URL. Current URL: https://demoqa.com/books?book=9781449325862
+at tests.BookStoreTest.verifyBookDetails(BookStoreTest.java:27)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -75,15 +76,27 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginTest@60dcc9fe]" name="tearDown" is-config="true" duration-ms="161" started-at="2025-04-10T04:15:12Z" finished-at="2025-04-10T04:15:12Z">
+        </test-method> <!-- verifyBookDetails -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.BookStoreTest@16e7dcfd]" name="tearDown" is-config="true" duration-ms="109" started-at="2025-04-10T12:44:13Z" finished-at="2025-04-10T12:44:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.LoginTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.BookStoreTest@16e7dcfd]" name="setup" is-config="true" duration-ms="41294" started-at="2025-04-10T12:44:13Z" finished-at="2025-04-10T12:44:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifySearchResults()[pri:0, instance:tests.BookStoreTest@16e7dcfd]" name="verifySearchResults" duration-ms="11304" started-at="2025-04-10T12:44:54Z" finished-at="2025-04-10T12:45:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchResults -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.BookStoreTest@16e7dcfd]" name="tearDown" is-config="true" duration-ms="116" started-at="2025-04-10T12:45:06Z" finished-at="2025-04-10T12:45:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.BookStoreTest -->
     </test> <!-- BookStore Tests -->
   </suite> <!-- BookStore Suite -->
 </testng-results>

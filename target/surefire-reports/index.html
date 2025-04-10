@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,10 +102,34 @@
                     <div class="method-list-content failed suite-BookStore_Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-BookStore_Suite" title="tests.LoginTest" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-BookStore_Suite" title="tests.BookStoreTest" hash-for-method="verifyBookDetails">verifyBookDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-BookStore_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-BookStore_Suite" class="hide-methods passed suite-BookStore_Suite"> (hide)</a> <!-- hide-methods passed suite-BookStore_Suite -->
+                      <a href="#" panel-name="suite-BookStore_Suite" class="show-methods passed suite-BookStore_Suite"> (show)</a> <!-- show-methods passed suite-BookStore_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-BookStore_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookStore_Suite" title="tests.LoginTest" hash-for-method="successfulLogin">successfulLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookStore_Suite" title="tests.LoginTest" hash-for-method="unSuccessfulLogin">unSuccessfulLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookStore_Suite" title="tests.BookStoreTest" hash-for-method="verifySearchResults">verifySearchResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-BookStore_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -120,37 +144,59 @@
           <div class="suite-BookStore_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">tests.LoginTest</span>
+              <span class="class-name">tests.BookStoreTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testValidLogin">
-                  </a> <!-- testValidLogin -->
-                  <span class="method-name">testValidLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button id=&quot;login&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (924, 768). Other element would receive the click: &lt;iframe frameborder=&quot;0&quot; src=&quot;https://4f7f608db5b00845839ba8d4c74da0b7.safeframe.googlesyndication.com/safeframe/1-0-41/html/container.html&quot; id=&quot;google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0&quot; title=&quot;3rd party ad content&quot; name=&quot;&quot; scrolling=&quot;no&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;728&quot; height=&quot;90&quot; data-is-safeframe=&quot;true&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; allow=&quot;private-state-token-redemption;attribution-reporting&quot; aria-label=&quot;Advertisement&quot; tabindex=&quot;0&quot; data-google-container-id=&quot;1&quot; style=&quot;border: 0px; vertical-align: bottom;&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
-  (Session info: chrome=135.0.7049.43)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;192-168-1-112.tpgi.com.au&apos;, ip: &apos;fe80:0:0:0:18f9:7a2e:e2ef:2e6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;1.8.0_371&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.43, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: /var/folders/cr/dqnwhrqs1n1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b75833dfc9f06b0a2ca7147b321167b3
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.LoginPage.login(LoginPage.java:20)
-	at tests.LoginTest.testValidLogin(LoginTest.java:12)
-... Removed 33 stack frames
+                  <a name="verifyBookDetails">
+                  </a> <!-- verifyBookDetails -->
+                  <span class="method-name">verifyBookDetails</span>
+                  <div class="stack-trace">java.lang.AssertionError: Page did not redirect to the expected URL. Current URL: https://demoqa.com/books?book=9781449325862
+	at tests.BookStoreTest.verifyBookDetails(BookStoreTest.java:27)
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-BookStore_Suite-class-failed -->
+          <div class="suite-BookStore_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.BookStoreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchResults">
+                  </a> <!-- verifySearchResults -->
+                  <span class="method-name">verifySearchResults</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Suite-class-passed -->
+          <div class="suite-BookStore_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulLogin">
+                  </a> <!-- successfulLogin -->
+                  <span class="method-name">successfulLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="unSuccessfulLogin">
+                  </a> <!-- unSuccessfulLogin -->
+                  <span class="method-name">unSuccessfulLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Suite-class-passed -->
         </div> <!-- panel BookStore_Suite -->
         <div panel-name="test-xml-BookStore_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -164,6 +210,7 @@ Session ID: b75833dfc9f06b0a2ca7147b321167b3
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;BookStore Tests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.BookStoreTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- BookStore Tests --&gt;
 &lt;/suite&gt; &lt;!-- BookStore Suite --&gt;
@@ -177,7 +224,7 @@ Session ID: b75833dfc9f06b0a2ca7147b321167b3
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">BookStore Tests (1 class)</span>
+                <span class="test-name">BookStore Tests (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -203,16 +250,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testValidLogin')
-data.setCell(0, 2, 'tests.LoginTest')
-data.setCell(0, 3, 6345);
+data.setCell(0, 1, 'verifyBookDetails')
+data.setCell(0, 2, 'tests.BookStoreTest')
+data.setCell(0, 3, 19569);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'successfulLogin')
+data.setCell(1, 2, 'tests.LoginTest')
+data.setCell(1, 3, 13005);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'unSuccessfulLogin')
+data.setCell(2, 2, 'tests.LoginTest')
+data.setCell(2, 3, 12139);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifySearchResults')
+data.setCell(3, 2, 'tests.BookStoreTest')
+data.setCell(3, 3, 11304);
 window.suiteTableData['BookStore_Suite']= { tableData: data, tableDiv: 'times-div-BookStore_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 56 seconds</span>
               <div id="times-div-BookStore_Suite">
               </div> <!-- times-div-BookStore_Suite -->
             </div> <!-- times-div -->
@@ -240,18 +299,57 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successfulLogin</span>
+                <span class="method-start">49417 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">62425 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">62550 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">unSuccessfulLogin</span>
+                <span class="method-start">103404 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">115547 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.BookStoreTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">115655 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testValidLogin</span>
-                <span class="method-start">65935 ms</span>
+                <span class="method-name">verifyBookDetails</span>
+                <span class="method-start">157506 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">72290 ms</span>
+                <span class="method-start">177085 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">177195 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchResults</span>
+                <span class="method-start">218489 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">229798 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

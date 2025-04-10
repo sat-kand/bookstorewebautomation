@@ -3,6 +3,7 @@
     <test name="BookStore Tests">
         <classes>
             <class name="tests.LoginTest"/>
+            <class name="tests.BookStoreTest"/>
         </classes>
     </test>
 </suite>
